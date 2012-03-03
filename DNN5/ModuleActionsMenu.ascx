@@ -1,0 +1,2 @@
+<%@ Control Language="c#" AutoEventWireup="True" Codebehind="ModuleActionsMenu.ascx.cs" Inherits="WatchersNET.SkinObjects.ModuleActionsMenu.Menu" %>
+<asp:PlaceHolder id="phModuleMenu" runat="server"></asp:PlaceHolder>

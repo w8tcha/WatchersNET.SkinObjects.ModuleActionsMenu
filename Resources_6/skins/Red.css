@@ -1,0 +1,258 @@
+/* ============================================================================
+    CSS STYLES FOR ModuleActionsMenu-Red
+   ============================================================================
+*/
+
+/****************************
+ Standard structural CSS 
+****************************/
+
+.ModuleOptionsMenu-Red {        
+  cursor: pointer;
+  padding:0;
+  margin:0;
+}
+ul.ModuleOptionsMenu-Red ul {
+  width: 20em;                  
+  padding-left: 0px;                 
+  margin-left: 0px; 
+}
+.ModuleOptionsMenu-Red li ul {
+  display: none;
+  position: absolute;
+  top: 22px;
+  left: 0px;
+}
+ul.ModuleOptionsMenu-Red li {
+  list-style-type: none;
+  margin: 0px;
+  position: relative; 
+}
+
+ul.ModuleOptionsMenu-Red li:hover > ul,
+ul.ModuleOptionsMenu-Red li.sfhover > ul { display: block;}
+
+/*********************
+ Main styles 
+*********************/
+
+/* Main Icon (Arrow Image) */
+.ModuleOptionsMenuMainIcon-Red {
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed1c24', endColorstr='#aa1317');
+    background: #d81b21;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#aa1317));
+	background: -moz-linear-gradient(top,  #ed1c24,  #aa1317);
+	background: -o-linear-gradient(top,  #ed1c24,  #aa1317);
+	
+    border: solid 1px #000;
+    -webkit-border-radius: 0.4em;
+    border-radius: 0.4em;
+	
+	color: #e9e9e9;
+	font-weight:bold;
+	cursor:default;
+	
+	display:block;
+	padding:5px 10px;
+	
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+	filter: alpha(opacity=40);
+	-moz-opacity:0.40;
+	-khtml-opacity: 0.40;
+	opacity: 0.40;
+	
+	z-index:30000;
+	height:16px;
+	minium-width:100px;
+}
+*:first-child+html .ModuleOptionsMenuMainIcon-Grey{height:auto;width:auto;}
+
+/* Main Icon without with DisplayLink Disabled */
+.MainLinkText {width:20px;}
+*:first-child+html .MainLinkText{width:auto;}
+
+.ModuleOptionsMenuMainIcon-Red:hover {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+	filter: alpha(opacity=85);
+	-moz-opacity:0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.ModuleOptionsMenuMainIcon-Red img{display:block;float:left;padding-right:3px;}
+
+/* menu wrapper */
+.ModuleOptionsMenu-Red {}
+/* all list items */
+.ModuleOptionsMenu-Red li {cursor:pointer;}
+
+.ModuleOptionsMenu-Red li li {padding-left:5px;	border: solid 1px transparent;}
+*html .ModuleOptionsMenu-Red li li{ border: 0; }
+
+.ModuleOptionsMenu-Red .MegaItem {padding-left:15px;	border: solid 1px transparent;}
+
+/* all links within the menu wrapper */
+.ModuleOptionsMenu-Red a {text-shadow: 0 1px 1px rgba(0,0,0, .3);}
+.ModuleOptionsMenu-Red li li a { padding-left: 5px;line-height: 20px;color: #e9e9e9;text-decoration:none;}
+
+ul.ModuleOptionsMenu-Red li.sfhover a { color: #e9e9e9;text-decoration:none;}
+
+.ModuleOptionsMenu-Red hr {height: 0px;width:90%;margin 0 auto;}
+
+.ModuleOptionsMenu-Red  { 
+ width:100px;
+}
+
+.ModuleOptionsMenu-Red h2 {
+	border-bottom: solid 1px #444;
+	letter-spacing: -1px;
+	margin: 7px 0 14px 0;
+	padding-bottom: 1px;
+	clear:both
+}
+
+/*********************
+ SubMenu styles 
+*********************/
+
+/* MainSubmenu  */
+.ModuleOptionsMenu-Red li ul { 
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed1c24', endColorstr='#aa1317');
+    background: #d81b21;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#aa1317));
+	background: -moz-linear-gradient(top,  #ed1c24,  #aa1317);
+	background: -o-linear-gradient(top,  #ed1c24,  #aa1317);
+	
+    border: solid 1px #000;
+    -webkit-border-radius: 0.4em;
+    border-radius: 0.4em;
+
+    -webkit-box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+    box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+	filter: alpha(opacity=95);
+	-moz-opacity:0.95;
+	-khtml-opacity: 0.95;
+	opacity: 0.95;
+}
+
+.ModuleOptionsMenu-Red .MegaItem:hover,.ModuleOptionsMenu-Red .MegaItem.sfhover  
+{
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9151b', endColorstr='#a11115'); 
+	background: url('HeaderBackRed.png') repeat-x #b61318;
+	background: -webkit-gradient(linear, left top, left bottom, from(#c9151b), to(#a11115));
+	background: -moz-linear-gradient(top,  #c9151b,  #a11115);
+	background: -o-linear-gradient(top,  #c9151b,  #a11115);
+
+	border: solid 1px #000;
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    border-radius: 0.4em;
+}
+
+/* Menu Item Icon Style */
+.ModuleOptionsMenu-Red li a img  {margin-left:0px!important;margin-top:2px!important;}
+
+/* ============================================================================
+    CSS STYLES FOR ModuleContextMenu
+   ============================================================================
+*/
+
+/****************************
+ Standard structural CSS 
+****************************/
+.ModuleContextMenu-Red,
+.ModuleContextMenu-Red ul {
+margin: 0;
+padding: 0;
+top:0;
+left:0;
+position: absolute;
+list-style-type: none;
+background: white;
+border: 1px solid black;
+display: none;  }
+
+.ModuleContextMenu-Red {z-index:30000;}
+.ModuleContextMenu-Red ul {z-index:30030;}
+
+.ModuleContextMenu-Red li{list-style-type: none;}
+.ModuleContextMenu-Red h2 {clear:both}
+.ModuleContextMenu-Red .MegaItem {width:150px;position: relative;display:block;float:left;margin-left:20px;}
+
+.ModuleContextMenu-Red li:last-child  {padding-bottom:5px}
+
+/*********************
+ Main styles 
+*********************/
+/* all list items */
+.ModuleContextMenu-Red li { cursor:pointer;padding-left: 6px;padding-top: 1px;border: solid 1px transparent;}
+
+*html .ModuleContextMenu-Red li{ border: 0; }
+
+
+/* all links within the menu wrapper */
+.ModuleContextMenu-Red li a { padding-left: 5px;line-height: 20px;color: #e9e9e9;text-decoration:none;background-color: transparent;text-shadow: 0 1px 1px rgba(0,0,0, .3);}
+
+.ModuleContextMenu-Red h2 {
+	border-bottom: solid 1px #444;
+	letter-spacing: -1px;
+	margin: 7px 0 14px 0;
+	padding-bottom: 14px;
+}
+
+/*********************
+ SubMenu styles 
+*********************/
+
+/* Main and Submenu  */
+.ModuleContextMenu-Red,
+.ModuleContextMenu-Red ul { 
+    width:400px;
+    color: #e9e9e9;
+
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed1c24', endColorstr='#aa1317');
+    background: #d81b21;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#aa1317));
+	background: -moz-linear-gradient(top,  #ed1c24,  #aa1317);
+	background: -o-linear-gradient(top,  #ed1c24,  #aa1317);
+	
+    border: solid 1px #000;
+    -webkit-border-radius: 0.4em;
+    border-radius: 0.4em;
+
+    -webkit-box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+    box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+
+	-moz-opacity:0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+
+/* styles for Hover items */
+.ModuleContextMenu-Red .MegaItem:hover  
+{
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9151b', endColorstr='#a11115'); 
+	background: url('HeaderBackRed.png') repeat-x #b61318;
+	background: -webkit-gradient(linear, left top, left bottom, from(#c9151b), to(#a11115));
+	background: -moz-linear-gradient(top,  #c9151b,  #a11115);
+	background: -o-linear-gradient(top,  #c9151b,  #a11115);
+	
+	padding-left: 6px;
+	border: solid 1px #000;
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    border-radius: 0.4em;
+}
+
+.ModuleContextMenu-Red li a {padding-left:0px}
+
+/* Menu Item Icon Style */
+.ModuleContextMenu-Red li a img  {margin-left:0px!important;margin-top:2px!important;}
+
+.ModuleContextMenu-Red hr {height: 0px;width:90%;margin 0 auto;color:black;}
+
+/* HIDE New DNN Default Module Action Menu */
+.dnnActionMenu {display:none!important; visibility:hidden;position:relative!important}
+.DnnModule{z-index:100;position:inherit!important}
+.dnnActionMenuBorder{position:relative!important;display:none!important; visibility:hidden;}
