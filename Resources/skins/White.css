@@ -1,0 +1,241 @@
+/* ============================================================================
+    CSS STYLES FOR ModuleActionsMenu-White
+   ============================================================================
+*/
+
+/****************************
+ Standard structural CSS 
+****************************/
+
+.ModuleOptionsMenu-White {        
+  cursor: pointer;
+  padding:0;
+  margin:0;
+}
+ul.ModuleOptionsMenu-White ul {
+  width: 20em;                  
+  padding-left: 0px;                     
+  margin-left: 0px; 
+}
+ul.ModuleOptionsMenu-White li {
+  list-style-type: none;
+  margin: 0px;
+  position: relative; 
+}
+.ModuleOptionsMenu-White li ul {
+  display: none;
+  position: absolute;
+  top: 22px;
+  left: 0px;
+}
+.ModuleOptionsMenu-White li ul ul {
+  display: none;
+  position: absolute;
+  top: 2px;
+  left: 15em;
+}
+ul.ModuleOptionsMenu-White li:hover > ul,
+ul.ModuleOptionsMenu-White li.sfhover > ul { display: block;}
+
+/*********************
+ Main styles 
+*********************/
+
+/* Main Icon (Arrow Image) */
+.ModuleOptionsMenuMainIcon-White {
+	background: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+	background: -moz-linear-gradient(top,  #fff,  #ededed);
+	background: -o-linear-gradient(top,  #fff,  #ededed);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+	
+    border:1px solid #000;
+    -webkit-border-radius: 0.4em;
+    border-radius: 0.4em;
+	
+	color: black;
+	font-weight:bold;
+	cursor:default;
+	
+	display:block;
+	padding:5px 10px;
+
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+	filter: alpha(opacity=40);
+	-moz-opacity:0.40;
+	-khtml-opacity: 0.40;
+	opacity: 0.40;
+	
+	height:16px;
+	minium-width:100px;
+}
+*:first-child+html .ModuleOptionsMenuMainIcon-White{height:auto;width:auto;}
+
+/* Main Icon without with DisplayLink Disabled */
+.MainLinkText {width:20px;}
+*:first-child+html .MainLinkText{width:auto;}
+
+.ModuleOptionsMenuMainIcon-White:hover {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+	filter: alpha(opacity=85);
+	-moz-opacity:0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.ModuleOptionsMenuMainIcon-White img{display:block;float:left;padding-right:3px;}
+
+/* menu wrapper */
+.ModuleOptionsMenu-White {}
+/* all list items */
+.ModuleOptionsMenu-White li {cursor:pointer;}
+
+.ModuleOptionsMenu-White li li {padding-left:6px;border: solid 1px transparent;}
+*html .ModuleOptionsMenu-White li li{ border: 1px white; }
+
+/* all links within the menu wrapper */
+.ModuleOptionsMenu-White a {background-color: transparent;text-shadow: 0 1px 1px rgba(0,0,0, .3);}
+.ModuleOptionsMenu-White li li a { padding-left: 5px;line-height: 20px;color: #000;text-decoration:none;}
+
+ul.ModuleOptionsMenu-White li.sfhover a { color: #000;text-decoration:none;}
+
+/*********************
+ SubMenu styles 
+*********************/
+
+/* MainSubmenu  */
+.ModuleOptionsMenu-White li ul { 
+    background: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+	background: -moz-linear-gradient(top,  #fff,  #ededed);
+	background: -o-linear-gradient(top,  #fff,  #ededed);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+	
+    border:1px solid #000;
+    -webkit-border-radius: 0.4em;
+    border-radius: 0.4em;
+
+    -webkit-box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+    box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+	filter: alpha(opacity=95);
+	-moz-opacity:0.95;
+	-khtml-opacity: 0.95;
+	opacity: 0.95;
+	
+	z-index:90000;
+}
+/* second-level lists-and-above-level lists */
+.ModuleOptionsMenu-White li ul ul {  background: #fff;
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');                          
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+	background: -moz-linear-gradient(top,  #fff,  #ededed);
+	background: -o-linear-gradient(top,  #fff,  #ededed);
+	
+	z-index:30030;
+}
+
+.ModuleOptionsMenu-White ul li:hover,.ModuleOptionsMenu-White ul li.sfhover  
+{
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));
+	background: -moz-linear-gradient(top,  #fff,  #dcdcdc);
+	background: -o-linear-gradient(top,  #fff,  #dcdcdc);
+	
+    padding-left: 6px;
+	
+	border: solid 1px #606060;
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    border-radius: 0.4em;
+}
+
+/* Menu Item Icon Style */
+.ModuleOptionsMenu-White li a img  {margin-left:0px!important;margin-top:2px!important;}
+
+.ModuleOptionsMenu-White hr {height: 0px;width:90%;margin 0 auto;}
+
+/* ============================================================================
+    CSS STYLES FOR ModuleContextMenu
+   ============================================================================
+*/
+
+/****************************
+ Standard structural CSS 
+****************************/
+.ModuleContextMenu-White,
+.ModuleContextMenu-White ul {margin: 0;
+padding: 0;
+position: absolute;
+left: 0;
+top: 0;
+list-style-type: none;
+border: 1px solid black;
+display: none; }
+
+.ModuleContextMenu-White {z-index:30000;}
+.ModuleContextMenu-White ul {z-index:30030;}
+
+.ModuleContextMenu-White li{position: relative;list-style-type: none;}
+
+/*********************
+ Main styles 
+*********************/
+/* all list items */
+.ModuleContextMenu-White li { cursor:pointer;padding-left: 6px;padding-top: 1px;border: solid 1px transparent;}
+*html .ModuleContextMenu-White li{ border: 0; }
+
+/* all links within the menu wrapper */
+.ModuleContextMenu-White li a { padding-left: 5px;line-height: 20px;color: #000;text-decoration:none;background-color: transparent;text-shadow: 0 1px 1px rgba(0,0,0, .3);}
+
+/* Main and Submenu  */
+.ModuleContextMenu-White,
+.ModuleContextMenu-White ul { 
+	width: 20em;
+	
+	background: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+	background: -moz-linear-gradient(top,  #fff,  #ededed);
+	background: -o-linear-gradient(top,  #fff,  #ededed);
+	
+    border:1px solid #000;
+    -webkit-border-radius: 0.4em;
+    border-radius: 0.4em;
+
+    -webkit-box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+    box-shadow: 3px 3px 3px rgba(0,0,0,.2);
+
+	-moz-opacity:0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+
+/* styles for Hover items */
+.ModuleContextMenu-White li:hover
+{
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));
+	background: -moz-linear-gradient(top,  #fff,  #dcdcdc);
+	border: solid 1px #606060;
+	-webkit-border-radius: 0.4em;
+	-moz-border-radius: 0.4em;
+	border-radius: 0.4em;
+}
+
+.ModuleContextMenu-White li a {padding-left:0px}
+
+/* Menu Item Icon Style */
+.ModuleContextMenu-White li a img  {margin-left:0px!important;margin-top:2px!important;}
+
+.ModuleContextMenu-White hr {height: 0px;width:90%;margin 0 auto;color:black;}
+
+
+.dnnActionMenuBorder{-moz-box-shadow: 0 0 5px #888;-webkit-box-shadow: 0 0 5px #888;box-shadow: 0 0 5px #888;z-index:900;background:transparent;position:absolute;margin-left:-8px;margin-top:-8px;}
+.DnnModule{z-index:902;position:relative;}
+	.dnnActionMenu{display:none;margin:0;padding:0;position:absolute;z-index:906;color:#000;left:10px;top:10px;}
+
+/* HIDE New DNN Default Module Action Menu */
+.dnnActionMenu {display:none!important; visibility:hidden;position:relative!important}
+.DnnModule{z-index:100;position:inherit!important}
+.dnnActionMenuBorder{position:relative!important;display:none!important; visibility:hidden;}

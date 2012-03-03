@@ -1,0 +1,53 @@
+﻿<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="WatchersNET.SkinObjects.ModuleActionsMenu" type="SkinObject" version="01.04.01">
+      <friendlyName>ModuleActionsMenu SkinObject</friendlyName>
+      <description>Displays the Actions Menu as a CSS (Context) Menu</description>
+      <owner>
+        <name>Ingo Herbote</name>
+        <organization>WatchersNET</organization>
+        <url>http://www.watchersnet.de</url>
+        <email>thewatcher@watchersnet.de</email>
+      </owner>
+      <license src="license.html" />
+      <releaseNotes src="ReleaseNotes.html" />
+      <dependencies>
+        <dependency type="CoreVersion">06.01.01</dependency>
+      </dependencies>
+      <components>
+        <component type="SkinObject">
+          <moduleControl>
+            <controlKey>ModuleActionsMenu</controlKey>
+            <controlSrc>DesktopModules/Watchersnet.Skinobjects.ModuleActionsMenu/ModuleActionsMenu.ascx</controlSrc>
+            <supportsPartialRendering>False</supportsPartialRendering>
+          </moduleControl>
+        </component>
+        <component type="File">
+          <files>
+            <basePath>DesktopModules\Watchersnet.Skinobjects.ModuleActionsMenu</basePath>
+            <file>
+              <name>ModuleActionsMenu.ascx</name>
+            </file>
+          </files>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>DesktopModules\Watchersnet.Skinobjects.ModuleActionsMenu</basePath>
+            <resourceFile>
+              <path></path>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+        <component type="Assembly">
+          <assemblies>
+            <basePath>bin</basePath>
+            <assembly>
+              <name>WatchersNET.SkinObjects.ModuleActionsMenu.dll</name>
+            </assembly>
+          </assemblies>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

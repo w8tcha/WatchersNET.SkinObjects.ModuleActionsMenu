@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<dotnetnuke version="3.0" type="SkinObject">
+	<folders>
+		<folder>
+			<name>WatchersNET.SkinObjects.ModuleActionsMenu</name>
+			<description></description>
+			<version>01.04.01</version>
+      <resourcefile>Resources.zip</resourcefile>
+			<modules>
+				<module>
+				<friendlyname>ModuleActionsMenu</friendlyname>
+					<controls>
+						<control>
+							<key>ModuleActionsMenu</key>
+							<src>ModuleActionsMenu.ascx</src>
+							<type>SkinObject</type>
+						</control>
+					</controls>
+				</module>
+			</modules>
+			<files>
+				<file>
+					<name>ModuleActionsMenu.ascx</name>
+				</file>
+				<file>
+					<name>WatchersNET.SkinObjects.ModuleActionsMenu.dll</name>
+				</file>
+        <file>
+          <name>Resources.zip</name>
+        </file>
+			</files>
+		</folder>
+	</folders>
+</dotnetnuke>
