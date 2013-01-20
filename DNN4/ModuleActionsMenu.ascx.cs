@@ -74,32 +74,32 @@ namespace WatchersNET.SkinObjects.ModuleActionsMenu
         private string userAgent;
 
         /// <summary>
-        /// The ctl modul menu.
+        /// The module menu control.
         /// </summary>
         private HtmlGenericControl ctlModulMenu;
 
         /// <summary>
-        /// The ctl modul menu link.
+        /// The module menu link.
         /// </summary>
         private LinkButton ctlModulMenuLink;
 
         /// <summary>
-        /// The ctl modul menu link image.
+        /// The module menu link image.
         /// </summary>
         private HtmlImage ctlModulMenuLinkImage;
 
         /// <summary>
-        /// The ctl modul menu main ul.
+        /// The module menu main UL.
         /// </summary>
         private HtmlGenericControl ctlModulMenuMainUl;
 
         /// <summary>
-        /// The ctl modul menu ul.
+        /// The module menu UL.
         /// </summary>
         private HtmlGenericControl ctlModulMenuUl;
 
         /// <summary>
-        /// The ctl modul menuli.
+        /// The module menu LI.
         /// </summary>
         private HtmlGenericControl ctlModulMenuli;
 
@@ -114,12 +114,12 @@ namespace WatchersNET.SkinObjects.ModuleActionsMenu
         private string contextAttachItemID = string.Empty;
 
         /// <summary>
-        /// The b include css file.
+        /// The include CSS file.
         /// </summary>
         private bool bIncludeCssFile = true;
 
         /// <summary>
-        /// The b include js.
+        /// The include JS.
         /// </summary>
         private bool bIncludeJs = true;
 
@@ -134,12 +134,12 @@ namespace WatchersNET.SkinObjects.ModuleActionsMenu
         private bool displayLink = true;
 
         /// <summary>
-        /// The obj int expand depth.
+        /// The start expand depth.
         /// </summary>
         private int objIntExpandDepth = -1;
 
         /// <summary>
-        /// The s css file.
+        /// The Skin Name.
         /// </summary>
         private string sCssFile = "Grey";
 
@@ -241,7 +241,7 @@ namespace WatchersNET.SkinObjects.ModuleActionsMenu
         public NavigationProvider Control { get; private set; }
 
         /// <summary>
-        /// Gets or sets CssFile.
+        /// Gets or sets a value indicating whether Include the CSS File.
         /// </summary>
         public string CssFile
         {
@@ -310,7 +310,7 @@ namespace WatchersNET.SkinObjects.ModuleActionsMenu
         }
 
         /// <summary>
-        /// Gets or sets a value indicating whether IncludeCssFile.
+        /// Gets or sets a value indicating whether Include the CSS File.
         /// </summary>
         public bool IncludeCssFile
         {
@@ -326,7 +326,7 @@ namespace WatchersNET.SkinObjects.ModuleActionsMenu
         }
 
         /// <summary>
-        /// Gets or sets a value indicating whether IncludeJs.
+        /// Gets or sets a value indicating whether Include the JS File.
         /// </summary>
         public bool IncludeJs
         {
@@ -382,9 +382,9 @@ namespace WatchersNET.SkinObjects.ModuleActionsMenu
         }
 
         /// <summary>
-        /// Raises the <see cref="E:System.Web.UI.Control.Init"/> event.
+        /// Raises the <see cref="E:System.Web.UI.Control.Init" /> event.
         /// </summary>
-        /// <param name="e">An <see cref="T:System.EventArgs"/> object that contains the event data.</param>
+        /// <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
         protected override void OnInit(EventArgs e)
         {
             base.OnInit(e);
@@ -397,7 +397,7 @@ namespace WatchersNET.SkinObjects.ModuleActionsMenu
         /// The Page Load.
         /// </summary>
         /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         protected void PageLoad(object sender, EventArgs e)
         {
             // Make sure its not in View Mode
@@ -487,13 +487,13 @@ namespace WatchersNET.SkinObjects.ModuleActionsMenu
         }
 
         /// <summary>
-        /// The load menu.
+        /// Loads the Menu.
         /// </summary>
         /// <param name="cssClassNameNormal">
-        /// The css Class Name Normal.
+        /// The CSS Class Name Normal.
         /// </param>
         /// <param name="cssClassNameContext">
-        /// The css Class Name Context.
+        /// The CSS Class Name Context.
         /// </param>
         private void LoadMenu(string cssClassNameNormal, string cssClassNameContext)
         {
@@ -590,13 +590,13 @@ namespace WatchersNET.SkinObjects.ModuleActionsMenu
         }
 
         /// <summary>
-        /// Render Current Node
+        /// Renders the current node
         /// </summary>
         /// <param name="mainNode">
         /// The main node.
         /// </param>
         /// <param name="modulMenuUl">
-        /// The modul Menu Ul.
+        /// The module Menu UL.
         /// </param>
         private void RenderNode(DNNNode mainNode, HtmlGenericControl modulMenuUl)
         {
@@ -697,10 +697,14 @@ namespace WatchersNET.SkinObjects.ModuleActionsMenu
         }
 
         /// <summary>
-        /// The Menu Item Click
+        /// The menu item click.
         /// </summary>
-        /// <param name="sender">The sender.</param>
-        /// <param name="e">The <see cref="System.Web.UI.WebControls.CommandEventArgs"/> instance containing the event data.</param>
+        /// <param name="sender">
+        /// The sender.
+        /// </param>
+        /// <param name="e">
+        /// The e.
+        /// </param>
         private void MenuItemClick(object sender, CommandEventArgs e)
         {
             try
@@ -717,10 +721,10 @@ namespace WatchersNET.SkinObjects.ModuleActionsMenu
         /// Register Java Scripts for the Menu
         /// </summary>
         /// <param name="cssClassNameNormal">
-        /// The css Class Name Normal.
+        /// The CSS Class Name Normal.
         /// </param>
         /// <param name="cssClassNameContext">
-        /// The css Class Name Context.
+        /// The CSS Class Name Context.
         /// </param>
         private void RegisterJavaScript(string cssClassNameNormal, string cssClassNameContext)
         {
@@ -870,7 +874,7 @@ namespace WatchersNET.SkinObjects.ModuleActionsMenu
         /// <summary>
         /// Set the Correct Image Icon Path
         /// </summary>
-        /// <param name="sImage">
+        /// <param name="image">
         /// Menu Image
         /// </param>
         /// <param name="isMainIcon">
@@ -879,32 +883,26 @@ namespace WatchersNET.SkinObjects.ModuleActionsMenu
         /// <returns>
         /// The Final Resolved Image Path
         /// </returns>
-        private string SetIconPath(string sImage, bool isMainIcon)
+        private string SetIconPath(string image, bool isMainIcon)
         {
-            string sFullImagePath;
+            string fullImagePath;
 
-            if (sImage.StartsWith("~/"))
+            if (image.StartsWith("~/"))
             {
-                sFullImagePath = this.ResolveUrl(sImage);
+                fullImagePath = this.ResolveUrl(image);
             }
-            else if (sImage.StartsWith("/"))
+            else if (image.StartsWith("/"))
             {
-                ////sFullImagePath = this.ResolveUrl(string.Format("~{0}", sImage));
-                sFullImagePath = sImage;
+                fullImagePath = image;
             }
             else
             {
-                if (isMainIcon)
-                {
-                    sFullImagePath = this.ModulePath + sImage;
-                }
-                else
-                {
-                    sFullImagePath = this.ResolveUrl(string.Format("~/images/{0}", sImage));
-                }
+                fullImagePath = isMainIcon
+                                     ? this.ModulePath + image
+                                     : this.ResolveUrl(string.Format("~/images/{0}", image));
             }
 
-            return sFullImagePath;
+            return fullImagePath;
         }
         #endregion
     }

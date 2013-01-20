@@ -1,0 +1,7 @@
+syntax: glob
+DNN4/obj/
+*.csproj.DotSettings.user
+*.csproj.user
+DNN5/obj/
+DNN6/obj/
+Thumbs.db
