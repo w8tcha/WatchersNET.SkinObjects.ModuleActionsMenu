@@ -1,6 +1,6 @@
 ﻿<dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="WatchersNET.SkinObjects.ModuleActionsMenu" type="SkinObject" version="01.04.01">
+    <package name="WatchersNET.SkinObjects.ModuleActionsMenu" type="SkinObject" version="01.04.02">
       <friendlyName>ModuleActionsMenu SkinObject</friendlyName>
       <description>Displays the Actions Menu as a CSS (Context) Menu</description>
       <owner>

@@ -4,7 +4,7 @@
 		<folder>
 			<name>WatchersNET.SkinObjects.ModuleActionsMenu</name>
 			<description></description>
-			<version>01.04.01</version>
+			<version>01.04.02</version>
       <resourcefile>Resources.zip</resourcefile>
 			<modules>
 				<module>
