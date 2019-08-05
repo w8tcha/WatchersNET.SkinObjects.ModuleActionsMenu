@@ -1,5 +1,6 @@
-# WatchersNET.SkinObjects.ModuleActionsMenu
+# WatchersNET.SkinObjects.ModuleActionsMenu for DNN 4-6 only!
 The **Module ActionsMenu** Renders the Module Action List of an DNN (DotNetNuke) Module as an a simple HTML unordered list instead of Heavy loaded Java Script lists.
+
 
 [Quick Video Guide](http://www.dnnhero.com/Videos/tabid/59/EntryId/157/Actions-Menu-Control-by-WatchersNET-for-DotNetNuke-Video-144.aspx)
 
